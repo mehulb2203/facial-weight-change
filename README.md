@@ -41,7 +41,7 @@ All the additional material including the original data, pre-trained models, res
 | :--- | :----------
 | [PROJECT: Facial Weight Transformation](https://drive.google.com/drive/folders/1SjpWM_7CkEroJoKhOsx7zTcg-09oPxqJ?usp=sharing) | Main folder.
 &boxvr;&nbsp; [paper.pdf](https://drive.google.com/file/d/1fCOuC0fX4lGC5u8bwTAoI3zgvPkkGdEh/view?usp=sharing) | High-quality version of the paper PDF.
-&boxvr;&nbsp; [cache](https://drive.google.com/drive/folders/1kwC7Qz4ZdYaRist-RjHdeJGf74rN0W4p?usp=sharing) | Folder with all the pre-trained models.
+&boxvr;&nbsp; [cache](https://drive.google.com/drive/folders/1Em1tBCmv-RTj5pP0AxWn56LI62IloaJ9?usp=sharing) | Folder with all the pre-trained models.
 &boxvr;&nbsp; [Logs](https://drive.google.com/drive/folders/1kwC7Qz4ZdYaRist-RjHdeJGf74rN0W4p?usp=sharing) | Folder with detailed log files.
 | &boxv;&nbsp; &boxvr;&nbsp; [Face Alignment](https://drive.google.com/drive/folders/1cfB_WOiOtBaO5VHqY2gg37fS0r0pzdoM?usp=sharing) | Logging info for Step-1 i.e, Pre-processing.
 | &boxv;&nbsp; &boxvr;&nbsp; [Image Embedding](https://drive.google.com/drive/folders/1T_pltuo-V7GGeFljQA2ogRxPXEi51Gb4?usp=sharing) | Logging info for Step-2 i.e, Latent Space Embedding.
