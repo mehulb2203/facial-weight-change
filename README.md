@@ -45,8 +45,8 @@ All the additional material including the original data, pre-trained models, res
 &boxvr;&nbsp; [Logs](https://drive.google.com/drive/folders/1kwC7Qz4ZdYaRist-RjHdeJGf74rN0W4p?usp=sharing) | Folder with detailed log files.
 | &boxv;&nbsp; &boxvr;&nbsp; [Face Alignment](https://drive.google.com/drive/folders/1cfB_WOiOtBaO5VHqY2gg37fS0r0pzdoM?usp=sharing) | Logging info for Step-1 i.e, Pre-processing.
 | &boxv;&nbsp; &boxvr;&nbsp; [Image Embedding](https://drive.google.com/drive/folders/1T_pltuo-V7GGeFljQA2ogRxPXEi51Gb4?usp=sharing) | Logging info for Step-2 i.e, Latent Space Embedding.
-&boxvr;&nbsp; [Metrics](https://drive.google.com/drive/folders/1nzugMvF5mQcZrS4qjbQP7xBNr7vvwCd4?usp=sharing) | Folder with score reports of all the evaluation methodologies used in the paper.
-| &boxv;&nbsp; &boxvr;&nbsp; [Metrics.xlsx](https://docs.google.com/spreadsheets/d/1Nf8cKWOQbdQexO2hx-3-qoFgpnrbZ6Kgz7NxtI2avJ0/edit?usp=sharing) | Spreadsheet detailing the summary of the evaluation strategies used.
+&boxvr;&nbsp; [Metrics](https://drive.google.com/drive/folders/1nzugMvF5mQcZrS4qjbQP7xBNr7vvwCd4?usp=sharing) | Folder with score reports for all the evaluation methodologies used in the paper.
+| &boxv;&nbsp; &boxvr;&nbsp; [Metrics.xlsx](https://docs.google.com/spreadsheets/d/1Nf8cKWOQbdQexO2hx-3-qoFgpnrbZ6Kgz7NxtI2avJ0/edit?usp=sharing) | Spreadsheet detailing the score summary of all the evaluation strategies.
 | &boxv;&nbsp; &boxvr;&nbsp; [Image Embedding](https://drive.google.com/drive/folders/1ufetf1lWH75kBVUi6lHDAjdoSHdRboyy?usp=sharing) | Metrics used to evaluate the quality of Latent Space Embedding.
 | &boxv;&nbsp; &ensp;&ensp; &boxvr;&nbsp; [LPIPS](https://drive.google.com/drive/folders/1pOik1aMUfhqCdMor3fXcg9nD2vWxHpMG?usp=sharing) | Learned Perceptual Image Patch Similarity (LPIPS) scores.
 | &boxv;&nbsp; &ensp;&ensp; &boxvr;&nbsp; [PSNR](https://drive.google.com/drive/folders/120EZ0xraHLgg-jdbWTFheBAPSPX3wFf6?usp=sharing) | Peak signal-to-noise ratio (PSNR) scores.
@@ -54,7 +54,7 @@ All the additional material including the original data, pre-trained models, res
 | &boxv;&nbsp; &boxvr;&nbsp; [Image Transformation](https://drive.google.com/drive/folders/1smV2WU56TG-rKmLg7sEPbGFUNF0VDAAV?usp=sharing) | Metrics used to evaluate the overall quality of Facial Weight Transformation.
 | &boxv;&nbsp; &ensp;&ensp; &boxvr;&nbsp; [FID](https://drive.google.com/drive/folders/1TQgRZ2XuGnVUBsOt5Tn7MRp8ksqYBP7R?usp=sharing) | Frechet Inception Distance (FID) scores.
 | &boxv;&nbsp; &ensp;&ensp; &boxvr;&nbsp; [Openface](https://drive.google.com/drive/folders/1U7hTJbHNox15_dACDN08z0of4C4la0-T?usp=sharing) | CMU OpenFace scores.
-&boxvr;&nbsp; [Results](https://drive.google.com/drive/folders/1IIUl72g6JCvVVeHpJCbC4B4sDh16CbMX?usp=sharing) | Obtained results at each step of the pipeline.
+&boxvr;&nbsp; [Results](https://drive.google.com/drive/folders/1IIUl72g6JCvVVeHpJCbC4B4sDh16CbMX?usp=sharing) | Results for all the performed experiments.
 | &boxv;&nbsp; &boxvr;&nbsp; [AMT](https://drive.google.com/drive/folders/1Cvqk3d2De0MVEt7ZUNR_kIqTr9cp2Vik?usp=sharing) | Human evaluation results.
 | &boxv;&nbsp; &boxvr;&nbsp; [Case Study](https://drive.google.com/drive/folders/1MyWGixLYLo-CLzIGMWCP2sM_T7uiVDIc?usp=sharing) | Results generated using CycleGAN and Pix2Pix models.
 | &boxv;&nbsp; &boxvr;&nbsp; [Face Alignment](https://drive.google.com/drive/folders/1QIUhjHNB_Vw8YAv5VURstfpqDClpa8s5?usp=sharing) | Cropped and aligned face images at `1024x1024` resolution.
@@ -63,8 +63,8 @@ All the additional material including the original data, pre-trained models, res
 &boxvr;&nbsp; [Test set](https://drive.google.com/drive/folders/1e9JcN9PbOUkpt9Ziy-uXBHsl_aDa6vb1?usp=sharing) | Original data used for all the experiments in the paper.
 | &boxv;&nbsp; &boxvr;&nbsp; [AMT](https://drive.google.com/drive/folders/1Q8cT6jkalFcKZrJQ0IaEmTzxluCSzI5D?usp=sharing) | Data used for the AMT user evaluation.
 | &boxv;&nbsp; &boxvr;&nbsp; [Feature Vector](https://drive.google.com/drive/folders/11x6WmdCiVKw7kb1nbV7Rt6GsP6lnIbqW?usp=sharing) | Data used to train the `weight attribute classifier`.
-| &boxv;&nbsp; &boxvr;&nbsp; [Real Images](https://drive.google.com/drive/folders/1fTuqB8NJXbpongL7caARsSmhCZOd41v_?usp=sharing) | Folder with `228` real images i.e, `12` Celebrity images, `100` images from the CFD dataset, `16` images used in the [Deep Shapely Portraits](https://dl.acm.org/doi/10.1145/3394171.3413873) paper, and `100` images from the WIDER FACE dataset.
-| &boxv;&nbsp; &boxvr;&nbsp; [Synthetic Images](https://drive.google.com/drive/folders/1KqcE26lRQN2zt3DCHCJRwDftDvtZrY3W?usp=sharing) | Folder with `100` StyleGAN generated images.
+| &boxv;&nbsp; &boxvr;&nbsp; [Real Images](https://drive.google.com/drive/folders/1fTuqB8NJXbpongL7caARsSmhCZOd41v_?usp=sharing) | Folder with `228` real images i.e, `12` Celebrity images, `100` images from the [CFD dataset](https://chicagofaces.org/default/), `16` images used in the [Deep Shapely Portraits](https://dl.acm.org/doi/10.1145/3394171.3413873) paper, and `100` images from the [WIDER FACE dataset](http://shuoyang1213.me/WIDERFACE/).
+| &boxv;&nbsp; &boxvr;&nbsp; [Synthetic Images](https://drive.google.com/drive/folders/1KqcE26lRQN2zt3DCHCJRwDftDvtZrY3W?usp=sharing) | Folder with `100` randomly generated StyleGAN images.
 
 ## System requirements
 
