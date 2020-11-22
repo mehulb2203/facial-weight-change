@@ -6,7 +6,7 @@
 
 ### Starting Docker container
 
-We use `nvcr.io/nvidia/tensorflow:19.09-py3` docker image. **Note that you need to use this specific docker image version as, the application serializes model training. The model is likely incompatible with other versions.** To run the docker container:
+We use `nvcr.io/nvidia/tensorflow:19.09-py3` docker image. **Note that you need to use this specific docker image version only as the model is likely incompatible with other versions.** To run the docker container:
 ```
 docker run --gpus all -it -p 8600:8500 -p 8601:8501 -p 5930:8888 -p 8111:8111 -p 8222:8222 --name uname-weight-changing-api -v /mnt/project_path/weight-changing-api/:/opt/weight-changing-api/ nvcr.io/nvidia/tensorflow:19.09-py3
 ```
@@ -42,31 +42,34 @@ pip install -r requirements.txt
 
 ## Pipeline
 
-### Step 0: Give input data
-Place all the source images under `raw_images/` folder.
+### Step 0: Provide input data
+Save all the source images under `raw_images/` folder.
 
 ### Step 1: Pre-processing
-Extract faces from the source images and resize to `1024x1024` resolution. For instance, use $PATH_TO_SOURCE_IMAGES$=`raw_images/` and $PATH_TO_ALIGNED_IMAGES$=`aligned_images/`.
+Extract faces from the source images and resize to `1024x1024` resolution.
 ```
 python align_images.py $PATH_TO_SOURCE_IMAGES$ $PATH_TO_ALIGNED_IMAGES$.
 ```
-__Output:__ Aligned images at `1024x1024` resolution stored in the `aligned_images/` folder.
+__Defaults:__ $PATH_TO_SOURCE_IMAGES$=`raw_images/` and $PATH_TO_ALIGNED_IMAGES$=`aligned_images/`.
+__Output:__ Aligned images at `1024x1024` resolution that are saved in the `aligned_images/` folder.
 
 ### Step 2: Latent Space Embedding
-Embed the aligned images into the StyleGAN manifold. For instance, use $PATH_TO_ALIGNED_IMAGES$=`aligned_images/`, $PATH_TO_GENERATED_IMAGES$=`generated_images/`, and $PATH_TO_LATENT_CODES$=`dlatents/`.
+Embed the aligned images into the StyleGAN manifold.
 ```
 CUDA_VISIBLE_DEVICES=$DEVICE_ID$ python encode_images.py $PATH_TO_ALIGNED_IMAGES$ $PATH_TO_GENERATED_IMAGES$ $PATH_TO_LATENT_CODES$
 ```
-__Output:__ Embedded images in the `generated_images/` folder and corresponding latent codes in `dlatents/`.
+__Defaults:__ $PATH_TO_ALIGNED_IMAGES$=`aligned_images/`, $PATH_TO_GENERATED_IMAGES$=`generated_images/`, and `$PATH_TO_LATENT_CODES$=dlatents/`.
+__Output:__ Embedded images are saved in the `generated_images/` folder and the corresponding latent codes in `dlatents/` folder.
 
 ### Step 3: Facial Weight Transformation
-Generate transformations by steering the latent codes along the `weight attribute direction`. For instance, use $PATH_TO_LATENT_CODES$=`dlatents/`.
+Generate thin to fat transformations by steering the latent codes along the `weight attribute direction`.
 ```
 CUDA_VISIBLE_DEVICES=$DEVICE_ID$ python transform_images.py $PATH_TO_LATENT_CODES$
 ```
-__Output:__ Thin and heavy facial weight transformations stored in the `transformed_images/` folder.
+__Defaults:__ $PATH_TO_LATENT_CODES$=`dlatents/`.
+__Output:__ `-5`, `-3`, `0`, `+3`, and `+5` transformations saved in the `transformed_images/` folder.
 
-**Note**: Adjust CUDA_VISIBLE_DEVICES to an available GPU.
+**Note**: Adjust `CUDA_VISIBLE_DEVICES` to an available GPU.
 
 
 **Note**: -  This GitHub repo doesn't contain the `cache` folder where all the pre-trained models are saved. You can download the files from [here](https://drive.google.com/drive/folders/1pQJi4ql-jzmtGq48VCkIcMAaudPwNC4v?usp=sharing) and put them in a folder with the same name and place it at the current folder level.
