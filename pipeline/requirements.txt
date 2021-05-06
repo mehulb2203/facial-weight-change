@@ -17,7 +17,7 @@ dlib==19.19.0
 entrypoints==0.3
 fastrlock==0.4
 Flask==1.1.2
-Flask-Cors==3.0.8
+Flask-Cors==3.0.9
 future==0.17.1
 gast==0.2.2
 google-pasta==0.1.7
