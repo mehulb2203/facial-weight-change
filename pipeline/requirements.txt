@@ -24,7 +24,7 @@ google-pasta==0.1.7
 graphsurgeon==0.4.1
 grpcio==1.23.0
 h5py==2.9.0
-horovod==0.18.0
+horovod==0.24.0
 idna==2.9
 imageio==2.9.0
 imutils==0.5.3
